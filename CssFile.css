@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    height: 100svh;
+    max-width: 100vw;
+}
+
+header{
+    position: relative;
+    left: 12.5%;
+    margin-top: 41px;
+    background-color: #131315;
+    width: 75%;
+    border-radius: 60px;
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo{
+    margin-left: 20px;
+    left: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navList{
+    margin-right: 20px;
+}
+
+.navList li,a{
+    padding: 0px 10px;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8A8A93;
+    display: inline;
+}
+
+.navList li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navList li a:hover{
+    color: #fff;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 31px;
+}
+
+.Prime{
+    width: 48%; margin-left: 12.5%
+}
+
+.firstContainer{
+  
+    background-color: #131315;
+    font-weight: 500;
+    font-size: 50px;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+    padding: 15px;
+    line-height: 60px;
+}
+
+.secondContainer{
+    background-color: #131315;
+    font-weight: 500;
+    font-size: 50px;
+    height: auto;
+    width: 25%;
+    border-radius: 40px;
+    padding: 20px;
+    margin-right: 12.5%;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.firstContainer p{
+    display: inline;
+}
+
+.secText{
+    color: #8A8A93;
+}
+
+#mail{
+   margin-top: 70px;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social1{
+    height: 5vh;
+    display: flex;
+    background-color: #131315;
+    border-radius: 60px;
+    width: 25%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.work{
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 31px;
+}
+.work button{
+    width: 100%;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: #131315;
+    border: none; color: #fff; 
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project1{
+    background-color: #131315;
+    margin-top: 31px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: none;
+}
+
+
+/* .project2{
+    background-color: #131315;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: none;
+} */
+
+.mainTextWork{
+    font-size: 40.5px;
+    font-weight: 500;
+}
+.secTextWork{
+    color: #8A8A93;
+    width: 350px;
+}
+
+.imgCont img{
+    height: 150px;
+}
+
+.imgCont img{
+    border-radius: 40px;
+    filter: grayscale(1);
+    transition: all 0.3s ease 0s;
+}
+
+.imgCont img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+#mail{
+        background-color: #FF6B00; color: #fff; font-weight: 500; width: 90%; border-radius: 60px; font-size: 30px ; line-height:70px;
+        border: none;
+}
+
+.inner-Cursor{
+    position: fixed;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: height 0.5s, width 0.5s;
+}
+
+.grow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    font-size: 40px;
+    transition: height 0.5s, width 0.5s;
+}
+
+
+/* Tablets dimension 1100px */
+@media screen and (max-width: 1100px) {
+
+    .Prime{
+        width: 48%; margin-left: 12.5%
+    }
+
+    .firstContainer{
+  
+        background-color: #131315;
+        font-weight: 500;
+        font-size: 32px;
+        height: auto;
+        width: 100%;
+        border-radius: 40px;
+        padding: 15px;
+        line-height: 40px;
+    }
+    
+    .secondContainer{
+        background-color: #131315;
+        font-weight: 500;
+        font-size: 32px;
+        height: auto;
+        width: 25%;
+        border-radius: 40px;
+        padding: 20px;
+        margin-right: 12.5%;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headerLogo{
+        margin-left: 20px;
+        left: 0px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .navList  li,a{
+        padding: 0px 10px;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+        color: #8A8A93;
+        display: inline;
+    }
+
+    .mainTextWork{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .secTextWork{
+        color: #8A8A93;
+        width: 270px;
+        font-size: 12px;
+    }
+    
+    #mail{
+        background-color: #FF6B00; color: #fff; font-weight: 500; width: 90%; border-radius: 60px; font-size: 16px ; line-height:60px;
+        border: none;
+    }
+
+    .imgCont img{
+        height: 125px;
+    }
+
+
+}
+/* another one */
+
+@media screen and (max-width: 704px) {
+
+    .Prime{
+        width: 48%; margin-left: 12.5%
+    }
+
+    .firstContainer{
+  
+        background-color: #131315;
+        font-weight: 500;
+        font-size: 32px;
+        height: auto;
+        width: 100%;
+        border-radius: 35px;
+        padding: 15px;
+        line-height: 40px;
+    }
+    
+    .secondContainer{
+        background-color: #131315;
+        font-weight: 500;
+        font-size: 32px;
+        height: auto;
+        width: 25%;
+        border-radius: 40px;
+        padding: 20px;
+        margin-right: 12.5%;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headerLogo{
+        margin-left: 20px;
+        left: 0px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .navList li,a{
+        padding: 0px 10px;
+        font-weight: 500;
+        font-size: 13px;
+        text-decoration: none;
+        color: #8A8A93;
+        display: inline;
+    }
+    
+    #mail{
+        background-color: #FF6B00; color: #fff; font-weight: 500; width: 90%; border-radius: 60px; font-size: 13px ; line-height:60px;
+        border: none;
+    }
+
+    .mainTextWork{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .secTextWork{
+        color: #8A8A93;
+        width: 210px;
+    }
+
+/* PHONE SCREENS * dimension?*/
+@media screen and (max-width: 660px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .Prime{
+        width: 75%;
+    }
+
+    .secondContainer{
+        margin-top: 31px;
+        margin-left: 12.5%;
+        width: 75%;
+    }
+
+    #mail{
+        font-size: 30px;
+    }
+
+    .project1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imgCont img{
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    .secTextWork{
+    width: 100%;
+    }
+
+}
+}
