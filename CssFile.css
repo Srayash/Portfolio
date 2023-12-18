@@ -11,8 +11,6 @@
 body{
     background: #000;
     color: #fff;
-    height: 100svh;
-    max-width: 100vw;
 }
 
 header{
@@ -23,17 +21,19 @@ header{
     width: 75%;
     border-radius: 60px;
     display: flex;
-    height: 5vh;
+    height: 42px;
     justify-content: space-between;
     align-items: center;
 }
 
 .headerLogo{
-    margin-left: 20px;
-    left: 0px;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.nav{
+    transition: all 0.3s ease-out;
 }
 
 .navList{
@@ -57,7 +57,13 @@ header{
     color: #fff;
 }
 
+.navList a.active{
+    color: #fff;
+}
 
+#burger{
+    display: none;
+}
 
 .container{
     display: flex;
@@ -124,15 +130,23 @@ header{
     margin-top: 30px;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social1:hover{
+    background-color: #FF6B00;
 }
 
 .work{
     width: 75%;
     margin-left: 12.5%;
     margin-top: 31px;
+    margin-bottom: 31px;
 }
+
 .work button{
     width: 100%;
+    height: 42px;
     border-radius: 60px;
     font-size: 20px;
     background-color: #131315;
@@ -179,13 +193,13 @@ header{
 
 .imgCont img{
     border-radius: 40px;
-    filter: grayscale(1);
+    filter: grayscale(0.1);
     transition: all 0.3s ease 0s;
 }
 
 .imgCont img:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
+    filter: grayscale(0);
 }
 
 #mail{
@@ -216,6 +230,50 @@ header{
     transition: height 0.5s, width 0.5s;
 }
 
+footer{
+    position: relative;
+    left: 12.5%;
+    margin-bottom: 41px;
+    background-color: #131315;
+    width: 75%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.Connect{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.socialLogo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.socialLogo i:hover{
+    color: #FF6B00;
+}
+
+.socialLogo1 i{
+    font-size: 30px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+footer p{
+    padding-top: 9px;
+    font-size: 12px;
+}
+
+.copyright{
+    color: #8A8A93;
+}
 
 /* Tablets dimension 1100px */
 @media screen and (max-width: 1100px) {
@@ -357,6 +415,37 @@ header{
 
 /* PHONE SCREENS * dimension?*/
 @media screen and (max-width: 660px) {
+
+    #burger{
+        display:block;
+        width: 32px;
+        font-size: 25px;
+        margin-top: 1.5px;
+        margin-right: 7px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .nav{
+        position: absolute;
+        top:100%;
+        right: 0%;
+        height: auto;
+        width: 100%;
+        background-color: #13131513;
+        backdrop-filter: blur(30px);
+        z-index: 1;
+        border-radius: 40px;
+        margin-top: 31px;
+        padding: 20px;
+    }
+
+    .navList li a{
+        font-size: 60px;
+    }
+
     .container{
         flex-direction: column;
     }
