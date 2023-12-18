@@ -1,5 +1,8 @@
 var innerCursor = document.querySelector(".inner-Cursor");
 const mail = document.querySelector("#mail");
+burger = document.querySelector("#burger");
+navbar = document.querySelector(".nav");
+project1 = document.querySelector(".project1")
 
 document.addEventListener("mousemove", moveCursor);
 
@@ -35,3 +38,11 @@ mail.addEventListener("click", ()=>{
     open('mailto:srayashsingh995@gmail.com');
 })
 
+
+burger.addEventListener("click", ()=>{
+    navbar.classList.toggle("v-class-resp");
+})
+
+project1.addEventListener('click', ()=>{
+    open('https://srayash.github.io/MERN');
+})
