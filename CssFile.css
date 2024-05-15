@@ -158,6 +158,16 @@ header{
     align-items: center;
 }
 
+.project2{
+    background-color: #131315;
+    margin-top: 31px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: none;
+}
+
 .project1{
     background-color: #131315;
     margin-top: 31px;
@@ -185,7 +195,7 @@ header{
 }
 .secTextWork{
     color: #8A8A93;
-    width: 350px;
+    width: 70%;
 }
 
 .imgCont img{
@@ -482,7 +492,8 @@ footer p{
     }
 
 }
-    @media screen and (max-width: 630px){
+
+@media screen and (max-width: 630px){
     .navList li a{
         font-size: 40px;
     }
@@ -490,5 +501,4 @@ footer p{
         font-size: 8px;
     }
 }
-
 }
