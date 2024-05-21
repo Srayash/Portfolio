@@ -45,5 +45,9 @@ burger.addEventListener("click", ()=>{
 })
 
 project1.addEventListener('click', ()=>{
+    open('https://grade-calculator-gold.vercel.app');
+})
+
+project2.addEventListener('click', ()=>{
     open('https://srayash.github.io/MERN');
 })
