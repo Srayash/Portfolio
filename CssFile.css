@@ -481,6 +481,12 @@ footer p{
         justify-content: space-between;
     }
 
+    .project2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .imgCont img{
         margin-top: 25px;
         width: 100%;
