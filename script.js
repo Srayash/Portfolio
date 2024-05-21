@@ -2,8 +2,8 @@ var innerCursor = document.querySelector(".inner-Cursor");
 const mail = document.querySelector("#mail");
 burger = document.querySelector("#burger");
 navbar = document.querySelector(".nav");
-project1 = document.querySelector(".project1")
-project2 = document.querySelector(".project2")
+project1 = document.querySelector(".project1");
+project2 = document.querySelector(".project2");
 
 document.addEventListener("mousemove", moveCursor);
 
@@ -14,9 +14,7 @@ function moveCursor(e) {
     innerCursor.style.top = `${y}px`;
 }
 
-let projects = Array.from(document.querySelectorAll(`.project1`,`.project2`));
-
-console.log(projects);
+let projects = [project1 , project2]
 
 projects.forEach((project) => {
     project.addEventListener('mouseover', ()=>{
