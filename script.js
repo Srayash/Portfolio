@@ -47,5 +47,5 @@ project1.addEventListener('click', ()=>{
 })
 
 project2.addEventListener('click', ()=>{
-    open('https://srayash.github.io/MERN');
+    open('https://srayash.github.io/MausamDekho/');
 })
